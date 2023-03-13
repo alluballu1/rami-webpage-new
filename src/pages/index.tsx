@@ -13,7 +13,7 @@ export default function Home() {
         testing
       </Head>
       <main className={styles.main}>
-        <div>
+        <div style={{ marginTop: -200 }}>
           <ParallaxTesting data='pogu hehe ' />
           <div style={{ padding: 10, textAlign: 'center' }}>
           <p>

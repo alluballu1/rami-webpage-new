@@ -3,12 +3,12 @@ import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 import styles from "@/styles/Home.module.css";
 import mountains from "@/images/Mountains.png";
 import sun from "@/images/Sun.png";
-import first from '@/images/parallaximages/1.png'
-import second from '@/images/parallaximages/2.png'
-import third from '@/images/parallaximages/3.png'
-import fourth from '@/images/parallaximages/4.png'
-import BG from '@/images/parallaximages/BG.png'
-import Birds from '@/images/parallaximages/Birds.png'
+import first from '@/images/newparallaximages/1.png'
+import second from '@/images/newparallaximages/2.png'
+import third from '@/images/newparallaximages/3.png'
+import fourth from '@/images/newparallaximages/4.png'
+import BG from '@/images/newparallaximages/BG-alt-1.png'
+import Birds from '@/images/newparallaximages/Birds.png'
 import Image from "next/image";
 
 type Props = {
@@ -27,29 +27,30 @@ const ParallaxTesting = (props: Props) => {
         layers={[
           {
             image: BG.src,
-            speed: -10,
-            style: { width: '100%', height: '100%',  overflow: "hidden" },
+            speed: -50,
+            style: { width: '100%', height: '100%',  overflow: "hidden", marginTop: '30vh' },
           },
           {
             image: fourth.src,
             speed: 10,
-            style: { width: '100%', height: '100%', marginTop: '40vh', overflow: "hidden" },
+            
+            style: { width: '100%', height: '100%', marginTop: '0vh', overflow: "hidden" },
           },
           {
             image: third.src,
             speed: 30,
-            style: { width: '100%', height: '100%', marginTop: '60vh', overflow: "hidden" },
+            style: { width: '100%', height: '100%', marginTop: '25vh', overflow: "hidden" },
           },
           {
             image: second.src,
             speed: 50,
-            style: { width: '100%', height: '100%', marginTop: '80vh', overflow: "hidden" },
+            style: { width: '100%', height: '100%', marginTop: '50vh', overflow: "hidden" },
           },
           
           {
             image: first.src,
             speed:70,
-            style: { width: '100%', height: '100%', marginTop: '100vh'},
+            style: { width: '100%', height: '100%', marginTop: '100vh', overflow: "hidden" },
           },
           {
             image: Birds.src,
@@ -60,7 +61,7 @@ const ParallaxTesting = (props: Props) => {
           },
         ]}
         style={{
-          height: '100vh',
+          height: '110vh',
           width: "100%",
           marginTop: 0,
           justifyContent: 'center',
