@@ -28,29 +28,29 @@ const ParallaxTesting = (props: Props) => {
           {
             image: BG.src,
             speed: -50,
-            style: { width: '100%', height: '100%',  overflow: "hidden", marginTop: '30vh' },
+            style: { width: '100%', height: '100%',  overflow: "hidden", marginTop: '50vh' },
           },
           {
             image: fourth.src,
-            speed: 10,
+            speed: 0,
             
             style: { width: '100%', height: '100%', marginTop: '0vh', overflow: "hidden" },
           },
           {
             image: third.src,
-            speed: 30,
-            style: { width: '100%', height: '100%', marginTop: '25vh', overflow: "hidden" },
+            speed: 10,
+            style: { width: '100%', height: '100%', marginTop: '15vh', overflow: "hidden" },
           },
           {
             image: second.src,
-            speed: 50,
-            style: { width: '100%', height: '100%', marginTop: '50vh', overflow: "hidden" },
+            speed: 20,
+            style: { width: '100%', height: '100%', marginTop: '25vh', overflow: "hidden" },
           },
           
           {
             image: first.src,
-            speed:70,
-            style: { width: '100%', height: '100%', marginTop: '100vh', overflow: "hidden" },
+            speed: 30,
+            style: { width: '100%', height: '100%', marginTop: '60vh', overflow: "hidden" },
           },
           {
             image: Birds.src,
