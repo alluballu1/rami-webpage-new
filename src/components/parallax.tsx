@@ -42,22 +42,22 @@ const ParallaxTesting = (props: Props) => {
           },
           {
             image: Birds.src,
-            speed: 50,
-
-            translateX: [200, 200],
-            translateY: [0, 10],
+            speed: 200,
+            translateX: [150, 150],
+            translateY: [20, 40],
             style: { width: '25%', height: '25%', marginTop: '50vh', overflow: "hidden" },
           },
           {
             image: second.src,
-            speed: 60,
-            style: { width: '100%', height: '100%', marginTop: '75vh', overflow: "hidden" },
+            speed: 50,
+            style: { width: '100%', height: '100%', marginTop: '60vh', overflow: "hidden" },
           },
           
           {
             image: first.src,
-            speed:80,
-            style: { width: '100%', height: '100%', marginTop: '100vh', overflow: "hidden" },
+            speed:60,
+            style: { width: '100%', height: '100%', marginTop: '70vh', overflow: "hidden" },
+            translateX: [-4, -4]
           },
         ]}
         style={{
@@ -65,7 +65,6 @@ const ParallaxTesting = (props: Props) => {
           width: "100%",
           marginTop: 0,
           justifyContent: 'center',
-          backgroundColor: 'pink',
         }}
       ></ParallaxBanner>
       {/* <Parallax speed={-50}>
