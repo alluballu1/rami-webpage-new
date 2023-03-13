@@ -22,7 +22,8 @@ const ParallaxTesting = (props: Props) => {
           {
             image: sun.src,
             speed: -10,
-            style: { width: 400, height: 400, marginTop: '10vh' }
+            style: { width: 400, height: 400, marginTop: '11vh', padding: 100 },
+            translateX: [0, 100]
           },
           {
             image: mountains.src,
@@ -34,9 +35,9 @@ const ParallaxTesting = (props: Props) => {
         style={{
           height: '100vh',
           width: "100%",
-          marginTop: -100,
+          marginTop: -250,
           justifyContent: 'center',
-          padding: 10
+          padding: 100
 
         }}
       ></ParallaxBanner>
