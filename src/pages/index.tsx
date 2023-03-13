@@ -14,8 +14,12 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div>
-        <ParallaxTesting data='pogu hehe ' />
-
+          <ParallaxTesting data='pogu hehe ' />
+          <div style={{ padding: 10, textAlign: 'center' }}>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi repellat, perspiciatis dolorem necessitatibus temporibus maxime aliquam omnis error quidem rem, repudiandae explicabo, ipsum voluptatum pariatur veritatis tempora sunt libero? Esse.
+          </p>
+          </div>
         </div>
       </main>
     </>

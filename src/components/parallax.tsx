@@ -3,6 +3,12 @@ import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 import styles from "@/styles/Home.module.css";
 import mountains from "@/images/Mountains.png";
 import sun from "@/images/Sun.png";
+import first from '@/images/parallaximages/1.png'
+import second from '@/images/parallaximages/2.png'
+import third from '@/images/parallaximages/3.png'
+import fourth from '@/images/parallaximages/4.png'
+import BG from '@/images/parallaximages/BG.png'
+import Birds from '@/images/parallaximages/Birds.png'
 import Image from "next/image";
 
 type Props = {
@@ -20,25 +26,46 @@ const ParallaxTesting = (props: Props) => {
       <ParallaxBanner
         layers={[
           {
-            image: sun.src,
+            image: BG.src,
             speed: -10,
-            style: { width: 400, height: 400, marginTop: '11vh', padding: 100 },
-            translateX: [0, 100]
+            style: { width: '100%', height: '100%',  overflow: "hidden" },
           },
           {
-            image: mountains.src,
+            image: fourth.src,
+            speed: 20,
+            style: { width: '100%', height: '100%', marginTop: '15vh', overflow: "hidden" },
+          },
+          {
+            image: third.src,
+            speed: 30,
+            style: { width: '100%', height: '100%', marginTop: '25vh', overflow: "hidden" },
+          },
+          {
+            image: Birds.src,
             speed: 50,
 
-            style: { width: 2400, height: 600, alignSelf: 'center', marginTop: '50vh' },
+            translateX: [200, 200],
+            translateY: [0, 10],
+            style: { width: '25%', height: '25%', marginTop: '50vh', overflow: "hidden" },
+          },
+          {
+            image: second.src,
+            speed: 60,
+            style: { width: '100%', height: '100%', marginTop: '75vh', overflow: "hidden" },
+          },
+          
+          {
+            image: first.src,
+            speed:80,
+            style: { width: '100%', height: '100%', marginTop: '100vh', overflow: "hidden" },
           },
         ]}
         style={{
           height: '100vh',
           width: "100%",
-          marginTop: -250,
+          marginTop: 0,
           justifyContent: 'center',
-          padding: 100
-
+          backgroundColor: 'pink',
         }}
       ></ParallaxBanner>
       {/* <Parallax speed={-50}>
