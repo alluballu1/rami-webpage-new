@@ -12,7 +12,6 @@ type Props = {
 const ParallaxTesting = (props: Props) => {
   const { data } = props;
   const [pos, setPos] = useState(0.5);
-  console.log(window.screen)
   /* useEffect(() => {
     addEventListener("scroll", (e) => console.log(e, window.screenTop));
   }); */
