@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Parallax } from "react-scroll-parallax";
+import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 import styles from "@/styles/Home.module.css";
-import mountains from '@/images/Mountains.png';
-import sun from '@/images/Sun.png';
+import mountains from "@/images/Mountains.png";
+import sun from "@/images/Sun.png";
 import Image from "next/image";
 
 type Props = {
@@ -17,10 +17,33 @@ const ParallaxTesting = (props: Props) => {
   }); */
   return (
     <>
-      <Parallax speed={-50}>
+      <ParallaxBanner
+        layers={[
+          {
+            image: sun.src,
+            speed: -10,
+            style: { width: 400, height: 400, marginTop: '10vh' }
+          },
+          {
+            image: mountains.src,
+            speed: 50,
+
+            style: { width: 2400, height: 600, alignSelf: 'center', marginTop: '50vh' },
+          },
+        ]}
+        style={{
+          height: '100vh',
+          width: "100%",
+          marginTop: -100,
+          justifyContent: 'center',
+          padding: 10
+
+        }}
+      ></ParallaxBanner>
+      {/* <Parallax speed={-50}>
           <Image  src={sun} style={{ overflow: 'hidden' }} alt="mountains" width={400} height={400} />
-      </Parallax>
-{/*       <Parallax
+      </Parallax> */}
+      {/*       <Parallax
         speed={0}
       >
        <div style={{ padding: 10, backgroundColor: "blue", zIndex: 80 }}>
@@ -28,14 +51,14 @@ const ParallaxTesting = (props: Props) => {
         </div>
         <Image src={mountains} alt="mountains" width={2400} height={600} />
       </Parallax> */}
-      <Parallax
+      {/* <Parallax
         speed={50}
       >
         <div style={{ width: '100vh', height: 600 }}>
-          <Image src={mountains} style={{ overflow: 'hidden' }} alt="mountains"/*  width={2400} height={600} */ />
+          <Image src={mountains} style={{ overflow: 'hidden' }} alt="mountains" />
         </div>
         <div style={{ width: '100%', backgroundColor: 'black', height: '100vh', marginTop: -10 }}/>
-      </Parallax>
+      </Parallax> */}
       {/* <div style={{ width: '100%', backgroundColor: 'black', height: 800, marginTop: -10 }}/> */}
       {/* <Parallax speed={-150}>
         <div style={{ padding: 10, backgroundColor: "cyan", zIndex: 80 }}>

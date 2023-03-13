@@ -13,7 +13,7 @@ export default function Home() {
         testing
       </Head>
       <main className={styles.main}>
-        <div style={{ marginTop: -800 }}>
+        <div>
         <ParallaxTesting data='pogu hehe ' />
 
         </div>
