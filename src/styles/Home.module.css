@@ -78,8 +78,10 @@ grid-column: span 3;
 
 .description{
   font-size: large;
+  display: flex;
   color: white;
   text-align: justify;
+  justify-content: center;
   flex: 1;
   padding: 10px;
 }
